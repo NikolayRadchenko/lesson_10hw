@@ -27,7 +27,7 @@ def load_info_candidate(uid):
     """
     candidate = utils.get_by_pk(uid)
     url = candidate["picture"]
-    return f"<img src='({url})'>\n" \
+    return f"<img src='{url}'>\n" \
            "<pre>\n" \
            f"Имя кандидата - {candidate['name']}\n" \
            f"Позиция кандидата: {candidate['position']}\n" \
