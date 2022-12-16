@@ -30,6 +30,11 @@ def load_info_candidate(id):
 
 @app.route("/search/<candidate_name>")
 def load_found_candidates(candidate_name):
+    """
+    Загружает информацию кандидата по его имени
+    :param candidate_name: имя кандидата
+    :return: Возвращает странички найденных кандидатов
+    """
     candidate = utils.get_by_name(candidate_name)
     return render_template("search.html", data=candidate, count=len(candidate))
 
