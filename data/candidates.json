@@ -1,6 +1,6 @@
 [
   {
-    "pk": 1,
+    "id": 1,
     "name": "Adela Hendricks",
     "picture": "https://picsum.photos/200",
     "position": "Go разработчик",
@@ -9,7 +9,7 @@
     "skills": "go, python"
   },
   {
-    "pk": 2,
+    "id": 2,
     "name": "Sheri Torres",
     "picture": "https://picsum.photos/200",
     "position": "Delphi developer",
@@ -18,7 +18,7 @@
     "skills": "Delphi, pascal, fortran, basic"
   },
   {
-    "pk": 3,
+    "id": 3,
     "name": "Burt Stein",
     "picture": "https://picsum.photos/200",
     "position": "Team lead",
@@ -27,7 +27,7 @@
     "skills": "делегирование, пользоваться календарем, обсуждать важные вопросы"
   },
   {
-    "pk": 4,
+    "id": 4,
     "name": "Bauer Adkins",
     "picture": "https://picsum.photos/200",
     "position": "CTO",
@@ -36,7 +36,7 @@
     "skills": "very important face"
   },
   {
-    "pk": 5,
+    "id": 5,
     "name": "Day Holloway",
     "picture": "https://picsum.photos/200",
     "position": "HR manager",
@@ -45,7 +45,7 @@
     "skills": "LinkedIn, telegram, spam, spam, spam"
   },
   {
-    "pk": 6,
+    "id": 6,
     "name": "Austin Cochran",
     "picture": "https://picsum.photos/200",
     "position": "python-develop",
@@ -54,12 +54,21 @@
     "skills": "python, html"
   },
   {
-    "pk": 7,
+    "id": 7,
     "name": "Sheree Love",
     "picture": "https://picsum.photos/200",
     "position": "Django developer",
     "gender": "female",
     "age": 33,
     "skills": "Python, Django, flask"
+  },
+  {
+    "id": 8,
+    "name": "Nikolay Radchenko",
+    "picture": "https://sun9-87.userapi.com/impg/daVkIxnMF2RncFyQ6nrGvDYRrr0Q4tMdfUPVAQ/LvL9Vif_xL8.jpg?size=807x605&quality=96&sign=5aacfc91dc3bf0f7a8a7b04a2ee71f02&type=album",
+    "position": "Python developer",
+    "gender": "male",
+    "age": 25,
+    "skills": "Python, flask, just a little SQL, HTML, CSS, JS, English"
   }
 ]

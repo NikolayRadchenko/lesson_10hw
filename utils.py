@@ -13,19 +13,36 @@ def load_candidates():
 
 def get_all():
     """
-    Возвращает данные на всех кандидатов
+    Возвращает список всех кандидатов
     """
-    return load_candidates()
+    candidates = load_candidates()
+    candidate_with_name = []
+    for candidate in candidates:
+        candidate_with_name.append(candidate["name"])
+    return ", ".join(candidate_with_name)
 
 
-def get_by_pk(pk):
+def get_by_name(candidate_name):
     """
-    Возвращает кандидата по его pk
-    :param pk: номер кандидата
+    Возвращает кандидата по его name
+    :param candidate_name: имя кандидата
+    """
+    candidates = load_candidates()
+    candidate_with_name = []
+    for candidate in candidates:
+        if candidate_name.lower() in candidate["name"].lower():
+            candidate_with_name.append(candidate)
+    return candidate_with_name
+
+
+def get_by_id(candidate_id):
+    """
+    Возвращает кандидата по его id
+    :param candidate_id: id кандидата
     """
     candidates = load_candidates()
     for candidate in candidates:
-        if candidate["pk"] == pk:
+        if candidate["id"] == candidate_id:
             return candidate
 
 
@@ -38,6 +55,6 @@ def get_by_skill(skill_name):
     candidates = load_candidates()
     candidate_with_skill = []
     for candidate in candidates:
-        if skill_name.lower() in candidate["skills"]:
-            candidate_with_skill.append(candidate["name"])
-    return ", ".join(candidate_with_skill)
+        if skill_name.lower() in candidate["skills"].lower():
+            candidate_with_skill.append(candidate)
+    return candidate_with_skill
